@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html" class="logo">Hosters</a>
+
+            <nav>
+                <a href="#" class="hide-desktop">
+                    <img src="./images/ham.svg" alt="" class="menu" id="menu">
+                </a>
+                <ul class="show-desktop hide-mobile" id="nav">
+                    <li id="exit" class="exit-btn hide-desktop"><img src="./images/exit.svg" alt=""></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+            </nav>
+        </header>
+
+        <section>
+            <img src="./images/server.svg" alt="" class="server">
+
+            <h1>Web Hosting for the Modern Era</h1>
+            <p class="subhead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, corporis.</p>
+            <img src="./images/scroll.svg" alt="" class="scroll hide-mobile show-desktop">
+        </section>
+    </div>
+
+    <div class="blue-container">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="./images/icon-1.svg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, deserunt?</p>
+                </li>
+                <li>
+                    <img src="./images/icon-2.svg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, deserunt?</p>
+                </li>
+                <li>
+                    <img src="./images/icon-3.svg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, deserunt?</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="grey-container">
+        <div class="container">
+            <ul>
+                <li>
+                    <figure>
+                        <img src="./images/user1.png" alt="">
+                        <blockquote>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</blockquote>
+                        <figcaption>-TK</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="./images/user2.png" alt="">
+                        <blockquote>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</blockquote>
+                        <figcaption>-TK</figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Start your free trial now!</h2>
+        <a href="#" class="cta">Get Started</a>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="container">
+                <a href="#">
+                    <a href="index.html" class="logo">Hosters</a>
+                </a>
+                <p class="address">Nashik,Maharashtra,India</p>
+                <ul class="footer-links">
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+
+        menu.addEventListener('click', function (e) {
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+
+        exit.addEventListener('click', function (e) {
+            nav.classList.add('hide-mobile');
+            e.preventDefault();
+        });
+    </script>
+</body>
+
+</html>
